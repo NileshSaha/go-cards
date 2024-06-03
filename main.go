@@ -7,8 +7,7 @@ func main() {
 	cards.print()
 
 	fmt.Println(cards)
-}
-
-func newCard() string {
-	return "Five of diamonds"
+	hand, remainingCards := deal(cards, 3)
+	hand.print()
+	remainingCards.print()
 }
